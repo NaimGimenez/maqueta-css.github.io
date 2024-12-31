@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build /build --dist-dir build --public-url /maqueta-css.github.io",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "parcel": "^2.13.3"
+  }
+}
