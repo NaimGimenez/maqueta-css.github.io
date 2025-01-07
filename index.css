@@ -119,7 +119,7 @@ a{
 /* MIS SERVICIOS*/
 
  .mis-servios{
-    border:solid orange;
+  
     height: 604px;
    display: grid;
    grid-template-columns: repeat(3,1fr);
