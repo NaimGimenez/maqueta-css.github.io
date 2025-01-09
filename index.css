@@ -12,7 +12,9 @@ body {
     max-width: 1440px;
     height: 3000px;
     margin: 0 ; /* Centra el contenido si es necesario */
-
+}
+@media(min-width:375px) {
+    
 }
 
 /* HEADER */
@@ -91,7 +93,7 @@ a{
 
 .about-me{
     display: flex;
-    width: 1440px;
+    width: 100%;
     height: 538px;
     align-items: center;
     justify-content: center;
@@ -123,7 +125,7 @@ a{
     height: 604px;
    display: grid;
    grid-template-columns: repeat(3,1fr);
-   grid-template-rows:repeat(2,1fr) ;
+   grid-template-rows:repeat(3,1fr) ;
    grid-template-areas: 
    "n1 n1 n1"
    "n2 n3 n4";
@@ -157,10 +159,18 @@ a{
 .n2{grid-area: n3;}
 .n3{grid-area: n4;}
 
+.comentario-servicios{
+    width: 262px;
+    height: 115px;
+    font-family: "Poppins",serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 /*formulario*/
 
 .formulario{
-    width: 1440px;
+    width: 100%;
     height:660px ;
     
     display: flex;
@@ -168,16 +178,14 @@ a{
     align-items: center;
     gap: 40px;
     background-color: black;
+    
+   
 }
 
 .formulario-inscripcion{
     display: flex;
     flex-direction: column;
-    width: 35%;
-    height: 100%;
-    justify-content: center;
     gap: 20px;
-   
 }
 
 .titulo-escribime{
@@ -227,24 +235,40 @@ textarea{
     width: 100%;
     height: 346px;
     background-color: gray;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3,33%);
+    
 }
 .imagen-empresa{
    
    mix-blend-mode: multiply;
+   grid-column: 1/2;
+   grid-row: 2/3;
+}
+
+.contacto-redes-sociales{
+    grid-column: 2/3 ;
+    grid-row: 2/3;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
 }
 
 .redes-sociales{
     display: flex;
-    flex-direction: column;
     margin-right:40px ;
+    align-items: center;
     justify-content: center;
+    
+    grid-column: 2/4;
+    grid-row: 3/4;
 }
 
 .fa-brands{
     margin: 20px 0px;
-    width: 200px;
+    width: 150px;
     height: 20px;
 }
  
