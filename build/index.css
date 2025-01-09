@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    height: 3000px;
+    margin: 0 ; /* Centra el contenido si es necesario */
+}
+@media(min-width:375px) {
+    
+}
+
+/* HEADER */
+.header-nav {
+    background-color: rgb(26, 6, 83);
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Esto permite que los elementos se envuelvan */
+    padding: 10px; /* Agrega un poco de espacio interior */
+    
+}
+
+.nav-logo {
+    
+    max-width: 150px; /* Asegúrate de que el logo no ocupe demasiado espacio */
+    height: auto;
+    mix-blend-mode: multiply;
+    filter:drop-shadow(2px 5px 50px rgb(32, 3, 65))
+}
+
+a{
+    -webkit-text-fill-color:white;
+    filter: drop-shadow(20px 10px 3px rgb(12, 39, 128));
+}
+
+.header-nav-links {
+    
+    margin: 0px 40px;
+    display: flex;
+    justify-content: end; /* Espacio uniforme entre enlaces */
+    flex-wrap: wrap; /* Permite que los enlaces se envuelvan si es necesario */
+    gap: 10px; /* Espacio entre enlaces */
+    flex-grow: 1; /* Permite que este bloque crezca si hay espacio */
+    min-width: 200px;
+}
+
+.header-nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: solid 1px blue; /* Resalta los enlaces */
+    border-radius: 4px;
+    text-align: center ;
+}
+
+/* HOME */
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background:linear-gradient(rgb(4, 0, 233),rgb(32, 0, 105),black)
+    
+}
+
+.bienvenidos{
+    margin-left:80px ;
+    width: 300px;
+    font-family: "Sixtyfour", serif;
+    font-size:48px;
+    -webkit-text-fill-color:white;
+    
+}
+
+.home-naim-foto{
+    width: 400px;
+    height: 410px;
+    margin-right: 80px;
+}
+
+/* about me */
+
+.about-me{
+    display: flex;
+    width: 100%;
+    height: 538px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: black;
+}
+
+.mi-descripcion{
+    width: 532px;
+    height: 237px;
+    -webkit-text-fill-color: aliceblue;
+}
+.about-me-descripcion{
+    font-family: "Reboto",serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.check{
+    width:211px;
+    height: 211px;
+    border-radius: 20px;
+}
+
+/* MIS SERVICIOS*/
+
+ .mis-servios{
+  
+    height: 604px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows:repeat(3,1fr) ;
+   grid-template-areas: 
+   "n1 n1 n1"
+   "n2 n3 n4";
+}
+
+.bloque-titulo-servicio{
+    display: block;
+    grid-area: n1 ; 
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Poppins",serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.mis-servicios-titulo{
+    width: 403px;
+    height: 56px;
+    margin-left: 6%;
+}
+
+.servicio{
+    width: 200px;
+    height: 50%;
+    margin-left: 30%;
+}
+
+.n1{grid-area: n2;}
+.n2{grid-area: n3;}
+.n3{grid-area: n4;}
+
+.comentario-servicios{
+    width: 262px;
+    height: 115px;
+    font-family: "Poppins",serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*formulario*/
+
+.formulario{
+    width: 100%;
+    height:660px ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: black;
+    
+   
+}
+
+.formulario-inscripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo-escribime{
+  
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction:column;
+    margin-top:15% ;
+    align-items: end;
+}
+
+.escribime{
+  font-family: "Poppins",serif;
+  font-size: 36px;
+  font-weight:600 ;
+  -webkit-text-fill-color: antiquewhite;
+}
+
+label{
+    display: block;
+    -webkit-text-fill-color: white;
+}
+
+input{
+    width: 376px;
+    height: 45px;
+    border-radius: 30px
+}
+
+textarea{
+    width:376px;
+    height: 113px;
+    border-radius: 30px
+}
+
+.button-enviar{
+    width:376px;
+    height: 45px;
+    background-color: yellow;
+    border-radius: 30px
+}
+
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    height: 346px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3,33%);
+    
+}
+.imagen-empresa{
+   
+   mix-blend-mode: multiply;
+   grid-column: 1/2;
+   grid-row: 2/3;
+}
+
+.contacto-redes-sociales{
+    grid-column: 2/3 ;
+    grid-row: 2/3;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+}
+
+.redes-sociales{
+    display: flex;
+    margin-right:40px ;
+    align-items: center;
+    justify-content: center;
+    
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+.fa-brands{
+    margin: 20px 0px;
+    width: 150px;
+    height: 20px;
+}
+ 
+p{
+    margin: 2px ;
+    font-size: 10px;
+}
